@@ -8,15 +8,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: white;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
-}
+    background: linear-gradie
 
 .logo-container {
     flex-shrink: 0;
