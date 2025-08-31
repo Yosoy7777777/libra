@@ -1,40 +1,42 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Store</title>
+    <title>Mi Tienda Online</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <h1>Tienda de Minecraft</h1>
-        <a href="#carrito" class="carrito-ancla">🛒 Carrito de Compras</a>
+        <h1>Mi Tienda Online</h1>
     </header>
 
     <main>
+        <section class="seccion-texto">
+            <h2>Nuestra Visión</h2>
+            <p>Ser la plataforma líder en productos innovadores, ofreciendo una experiencia de compra única y superando las expectativas de nuestros clientes.</p>
+        </section>
+
+        <section class="seccion-texto">
+            <h2>Nuestra Misión</h2>
+            <p>Proveer productos de alta calidad, con un servicio excepcional y un compromiso inquebrantable con la satisfacción del cliente. Buscamos construir relaciones duraderas y significativas.</p>
+        </section>
+
         <section class="productos">
-            <h2>Nuestros Artículos</h2>
+            <h2>Nuestros Productos</h2>
             <div class="producto">
-                <img src="minecraft_block.png" alt="Bloque de Minecraft">
-                <h3>Bloque de la Tierra</h3>
-                <p>Un clásico para construir tu mundo.</p>
-                <span class="precio">$5.00</span>
-                <button class="agregar-carrito" data-nombre="Bloque de la Tierra" data-precio="5.00">Añadir al Carrito</button>
+                <h3>Producto A</h3>
+                <p>Descripción del Producto A.</p>
+                <span class="precio">$10.00</span>
+                <button class="agregar-carrito" data-nombre="Producto A" data-precio="10.00">Añadir al Carrito</button>
             </div>
-
             <div class="producto">
-                <img src="minecraft_sword.png" alt="Espada de Minecraft">
-                <h3>Espada de Diamante</h3>
-                <p>La mejor arma para tus aventuras.</p>
-                <span class="precio">$15.00</span>
-                <button class="agregar-carrito" data-nombre="Espada de Diamante" data-precio="15.00">Añadir al Carrito</button>
-            </div>
-
-            <div class="oferta-mesa">
-                <p>⭐ **¡Oferta de la Mesa de Encantamientos!** ⭐</p>
-                <p class="precio-oferta">$12.00</p>
+                <h3>Producto B</h3>
+                <p>Descripción del Producto B.</p>
+                <span class="precio">$25.00</span>
+                <button class="agregar-carrito" data-nombre="Producto B" data-precio="25.00">Añadir al Carrito</button>
             </div>
         </section>
 
@@ -44,24 +46,11 @@
                 </ul>
             <p>Total: <span id="total-carrito">$0.00</span></p>
         </section>
-
-        <section class="contacto-social">
-            <h3>Contáctanos y Síguenos</h3>
-            <a href="https://wa.me/numerodetelefono" target="_blank" class="whatsapp-btn">
-                <img src="whatsapp_icon.png" alt="WhatsApp Icon">
-                WhatsApp
-            </a>
-            
-            <div class="instagram-feed">
-                <p>Sigue nuestro Instagram para más novedades</p>
-                <a href="https://www.instagram.com/tuinstagram" target="_blank">@tuinstagram</a>
-            </div>
-        </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Minecraft Store. Todos los derechos reservados.</p>
-    </footer>
+    
+    <a href="https://wa.me/tunumerodetelefono" class="whatsapp-flotante" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
