@@ -1,56 +1,78 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda Online</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Tienda de Productos - Cautivador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Mi Tienda Online</h1>
+    <header class="header">
+        <div class="logo-container">
+            <a href="#" class="logo">Tu Proyecto</a>
+        </div>
+        <div class="mission-vision">
+            <div class="text-block">
+                <h3>Misión</h3>
+                <p>Nuestra misión es empoderar a la comunidad a través de la innovación y la colaboración.</p>
+            </div>
+            <div class="text-block">
+                <h3>Visión</h3>
+                <p>Nuestra visión es ser líderes globales en soluciones tecnológicas que transformen vidas.</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#mision" class="nav-link">Misión</a></li>
+                <li class="nav-item"><a href="#vision" class="nav-link">Visión</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#carrito" class="nav-link nav-cart">🛒 Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="seccion-texto">
-            <h2>Nuestra Visión</h2>
-            <p>Ser la plataforma líder en productos innovadores, ofreciendo una experiencia de compra única y superando las expectativas de nuestros clientes.</p>
-        </section>
+    <main class="content">
+        <h1>Tienda de Productos</h1>
 
-        <section class="seccion-texto">
-            <h2>Nuestra Misión</h2>
-            <p>Proveer productos de alta calidad, con un servicio excepcional y un compromiso inquebrantable con la satisfacción del cliente. Buscamos construir relaciones duraderas y significativas.</p>
-        </section>
+        <section id="galeria" class="product-gallery">
+            </section>
 
-        <section class="productos">
-            <h2>Nuestros Productos</h2>
-            <div class="producto">
-                <h3>Producto A</h3>
-                <p>Descripción del Producto A.</p>
-                <span class="precio">$10.00</span>
-                <button class="agregar-carrito" data-nombre="Producto A" data-precio="10.00">Añadir al Carrito</button>
-            </div>
-            <div class="producto">
-                <h3>Producto B</h3>
-                <p>Descripción del Producto B.</p>
-                <span class="precio">$25.00</span>
-                <button class="agregar-carrito" data-nombre="Producto B" data-precio="25.00">Añadir al Carrito</button>
-            </div>
-        </section>
-
-        <section id="carrito">
+        <section id="carrito" class="cart-section">
             <h2>🛒 Carrito de Compras</h2>
-            <ul id="lista-carrito">
-                </ul>
-            <p>Total: <span id="total-carrito">$0.00</span></p>
+            <div id="cart-items" class="cart-items">
+                <p id="empty-cart-message">Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button id="checkout-button" class="checkout-button">Pagar con Nequi</button>
+            </div>
         </section>
+
+        <section id="mision" class="content-section">
+            <h2>Nuestra Misión</h2>
+            <p>La misión detallada del proyecto...</p>
+        </section>
+
+        <section id="vision" class="content-section">
+            <h2>Nuestra Visión</h2>
+            <p>La visión detallada del proyecto...</p>
+        </section>
+
     </main>
     
-    <a href=573007641309" class="whatsapp-flotante" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://wa.me/3001234567?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20tus%20productos." target="_blank" class="social-icon whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Proyecto. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
