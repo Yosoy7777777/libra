@@ -86,7 +86,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #a0c4ff;
+    background-color: violet;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
