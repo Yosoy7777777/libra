@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const botonesAgregar = document.querySelectorAll('.agregar-carrito');
     const listaCarrito = document.getElementById('lista-carrito');
@@ -15,8 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             total += precio;
             totalCarritoSpan.textContent = `$${total.toFixed(2)}`;
-
-            document.getElementById('carrito').scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
